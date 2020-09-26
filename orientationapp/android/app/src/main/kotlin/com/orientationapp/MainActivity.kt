@@ -1,4 +1,4 @@
-package com.examplex.orientation_app
+package com.orientationapp
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

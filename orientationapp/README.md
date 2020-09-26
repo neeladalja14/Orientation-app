@@ -1,6 +1,6 @@
-# orientation_app
+# orientationapp
 
-app for student&#x27;s orientation. 
+this is an app for students orientation
 
 ## Getting Started
 
