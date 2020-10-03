@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import "package:flutter/material.dart";
 import 'package:geo_app/screens/background_ui.dart';
 
@@ -15,9 +13,13 @@ class _AuthScreenState extends State<AuthScreen> with SingleTickerProviderStateM
   
   @override
   void initState() {
-    // TODO: implement initState
-    _controller = AnimationController(value: this, duration: Duration(seconds: 2));
     super.initState();
+    _controller = AnimationController(vsync: this, duration: Duration(seconds: 2));
+  }
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -30,8 +32,16 @@ class _AuthScreenState extends State<AuthScreen> with SingleTickerProviderStateM
               painter: BackgroundUi(
                 animation: _controller.view,
               ),
-            )
-          )
+            ),
+          ),
+          Center(
+            child: RaisedButton(
+                onPressed: () {
+                  _controller.forward(from: 0);
+                },
+              child: Text('Animate'),
+            ),
+          ),
         ],
       )
     );

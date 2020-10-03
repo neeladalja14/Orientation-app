@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "39110040365",
+    "firebase_url": "https://geoapp-b6792.firebaseio.com",
+    "project_id": "geoapp-b6792",
+    "storage_bucket": "geoapp-b6792.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39110040365:android:e91b806ddb45339991d1a4",
+        "android_client_info": {
+          "package_name": "com.geo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39110040365-2d57rtq2j6mb14nqapu87rbdtb5vuovo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqG2POYp6ZAfc8noqq8Wilj1qEdw_76nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39110040365-2d57rtq2j6mb14nqapu87rbdtb5vuovo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "39110040365-j9skil1h6a5mj96389je792heb7dorjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.geo-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
