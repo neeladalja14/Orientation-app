@@ -9,6 +9,7 @@ import 'Dashboard.dart';
 import 'package:geo_app/screens/auth/auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+
 // void main() => runApp(MyApp());
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LitAuthInit(
+      authProviders: const AuthProviders(
+        google: true,
+      ),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Orientation App",
