@@ -31,6 +31,7 @@ dependencies:
   google_fonts: ^1.1.0
   animations: ^1.1.2
   google_sign_in: ^4.5.4
+  flutter_grid_button: ^1.1.7
 
 
 dev_dependencies:

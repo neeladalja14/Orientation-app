@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:lit_firebase_auth/lit_firebase_auth.dart';
 import 'package:geo_app/screens/auth/auth.dart';
 
 class Dashboard extends StatefulWidget {
@@ -58,7 +59,7 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text("Dashboard",
+        title: Text("Signed In",
         style: TextStyle(
           color: Colors.redAccent,
         ),),
@@ -76,7 +77,8 @@ class _DashboardState extends State<Dashboard> {
           MyItems(Icons.chat, "Chat", 0xff3399fe,(){}),
           MyItems(Icons.file_copy_sharp, "Document FAQs", 0xff622f74,(){}),
           MyItems(Icons.schedule_rounded, "Book Appoinment", 0xff7297ff,(){}),
-          MyItems(Icons.logout, "Sign Out", 0xffff3266, (){}),
+          MyItems(Icons.logout, "Sign Out", 0xffff3266, (){context.signOut();
+          Navigator.of(context).push(AuthScreen.route);}),
         ],
         staggeredTiles: [
           StaggeredTile.extent(2, 130.0),
