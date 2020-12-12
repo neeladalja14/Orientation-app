@@ -71,7 +71,11 @@ class _DashboardState extends State<Dashboard> {
         children: <Widget>[
           MyItems(
               new IconButton(
-                  icon: new Icon(Icons.ondemand_video), onPressed: () {}),
+                  icon: new Icon(Icons.ondemand_video),
+                  onPressed: () {
+                    context.signOut();
+                    Navigator.of(context).push(AuthScreen.route);
+                  }),
               "Campus Tour",
               0xffed622b,
               () {}),
