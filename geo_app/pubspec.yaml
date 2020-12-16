@@ -32,6 +32,9 @@ dependencies:
   animations: ^1.1.2
   google_sign_in: ^4.5.4
   flutter_grid_button: ^1.1.7
+  photo_view: "0.10.3"
+  syncfusion_flutter_calendar: "18.3.53"
+  url_launcher: "5.7.10"
 
 
 dev_dependencies:
@@ -51,7 +54,15 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - images/ausable.jpg
+    - images/memorial.jpg
+    - images/beaumont.jpg
+    - images/acc.jpg
+    - images/hawkins.jpg
+    - images/campusmap.png
+    - images/sliverhawkins.jpg
+
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
